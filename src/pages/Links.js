@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import LinkList from '../components/LinkList';
+
 
 const Links = () => {
   return (
-    <div>
-      Links
-    </div>
+    
+    <LinkList/>
   )
 }
 

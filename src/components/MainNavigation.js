@@ -1,14 +1,36 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Navbar, Nav} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import '../index.scss';
 
 const MainNavigation = () => {
   
     const [currentKey, setCurrentKey] = useState(1);
-
+    
+    const path = window.location.pathname;
+    
+    useEffect(() => {
+      
+      switch(path) {
+        
+        case '/about': setCurrentKey(3)
+        break;
+        
+        case '/projects': setCurrentKey(2)
+        break;
+        
+        
+        default: setCurrentKey(1)
+        break;
+      }
+      
+    }, [path])
+    
+    
+  //Render
   return (
 
-    <Navbar bg="dark" variant="dark" style = {{padding: '10px', marginBotton: '20px'}}>
+    <Navbar className="header-menu" style = {{padding: '10px', marginBotton: '20px'}}>
     
       <Navbar.Brand className="logo-font" as={Link} to="/" 
       onClick={ () => setCurrentKey(1)}>

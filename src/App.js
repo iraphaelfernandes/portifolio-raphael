@@ -10,8 +10,8 @@ import './components/MainNavigation.scss'
 function App() {
   return (
 
-   <Router>
-     <MainNavigation/>
+  <Router>
+    <MainNavigation/>
     <main>
       <Switch>
 
