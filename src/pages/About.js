@@ -17,12 +17,12 @@ const About = () => {
         <h4><strong>About me..</strong></h4>
         
         <h5>
-        I am...
+        Computer Engineering Student
         </h5>
         
         <Button 
         variant="outline-light" 
-        href={`${process.env.PUBLIC_URL}`}
+        href={`${process.env.PUBLIC_URL}/file/curriculum-raphael.pdf`}
         size="lg"
         download
         >

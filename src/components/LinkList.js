@@ -9,6 +9,8 @@ const LinkList = () => {
   const links = [
     
     'https://github.com/raphafern',
+    'https://www.instagram.com/rapha_in/',
+    'https://www.facebook.com/raphael.fernandes.351/'
     
     
   ];
@@ -25,7 +27,7 @@ const LinkList = () => {
         src={`${process.env.PUBLIC_URL}/perfil-Raphael.jpeg`}
         className="mb-4 img-linklist"
         rounded/>
-        <h5>raphael</h5>
+        <h5>@raphael</h5>
         
         {links.map((link)=>(
           

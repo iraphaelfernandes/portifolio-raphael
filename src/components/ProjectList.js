@@ -6,11 +6,18 @@ const ProjectList = () => {
   const projects = [
 
     { 
+      name: 'Site Latic',
+      url: 'http://www.latic.uerj.br/',
+      github:'https://github.com/raphafern/sitelatic',
+      languages:'HTML, CSS, JavaScript',
+      description:''
+    }, 
+    { 
       name: 'CRUD NODEJS',
-      url: 'SDBA',
-      github:'ASFAS',
-      languages:'asdfas',
-      description:'sdff'
+      url: '',
+      github:'https://github.com/raphafern/pac_crud',
+      languages:'NodeJS',
+      description:''
     }
   ]
 

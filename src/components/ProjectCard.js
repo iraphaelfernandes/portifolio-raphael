@@ -2,6 +2,7 @@ import React from 'react'
 import {Button, Card} from 'react-bootstrap'
 import { Icon, InlineIcon } from '@iconify/react';
 import githubOctocat from '@iconify-icons/logos/github-octocat';
+import '../index.scss';
 
 
 const ProjectCard = (props) => {
@@ -14,7 +15,7 @@ const ProjectCard = (props) => {
       <Card.Body>
       
         <Card.Title>{props.name}</Card.Title>
-        <Card.Text>{props.description}</Card.Text>
+        <Card.Text className="description-card" >{props.description}</Card.Text>
         <Card.Text>{props.languages}</Card.Text>
       
       </Card.Body>
