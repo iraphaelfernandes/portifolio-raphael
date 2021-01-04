@@ -1,6 +1,7 @@
 import React from 'react'
 import {ListGroup, Image} from 'react-bootstrap';
 import LinkButton from './LinkButton'
+import '../index.scss';
 
 
 const LinkList = () => {
@@ -22,7 +23,7 @@ const LinkList = () => {
         with="120"
         height="150" 
         src={`${process.env.PUBLIC_URL}/perfil-Raphael.jpeg`}
-        className="mb-4"
+        className="mb-4 img-linklist"
         rounded/>
         <h5>raphael</h5>
         
